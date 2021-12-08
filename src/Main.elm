@@ -38,7 +38,7 @@ view ({ overall, open } as model) =
         , style "font-size" "0.8em"
         ]
         [ stylesheet
-        , container [ style "border-radius" "16px", style "background-color" "#e5e7ec", style "padding" "16px", style "margin" "0 32px" ]
+        , container [ style "border-radius" "16px", style "background-color" "#e5e7ec", style "padding" "16px", style "max-width" "800px" ]
             [ viewComponent Overall (open == Just Overall) overall [ style "border-radius" "16px", style "box-shadow" "0px 2px 4px #aaa", style "margin" "-16px -16px 0 -16px", style "minHeight" "360px" ]
             , viewBreakdownHeader
             , viewCategories model
