@@ -79,8 +79,8 @@ viewBreakdownHeader =
 
 viewCategories : Model -> Html Msg
 viewCategories { open, cat1, cat2, cat3 } =
-    columns { multiline = True, gap = Gap2, display = DesktopAndBeyond, centered = True }
-        [ class isVariable, style "display" "flex" ]
+    columns { multiline = True, gap = Gap1, display = DesktopAndBeyond, centered = True }
+        [ class isVariable, style "display" "flex", style "padding-bottom" "8px" ]
         [ column columnModifiers
             [ class isFull, style "padding" "var(--columnGap)" ]
             [ viewComponent Cat1 (open == Just Cat1) cat1 [ style "border-radius" "12px", style "min-height" "160px" ]
